@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+
+            <form  (ngSubmit)="onSubmit()" [formGroup]="formGroup">
+                <h4>Login User</h4>
+                <div  class="form-group">
+                    <label for="username" class="label">Username</label>
+                    <input type="text" class="form-control" formControlName="username" name="username" placeholder="Username"/>
+
+                    <div *ngIf="submitted && f['username'].errors">
+                        <div class="error text-danger">
+                            Username is mandatory.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="label">Password</label>
+                    <input type="password" class="form-control" formControlName="password" name="password" placeholder="password"/>
+                    <div *ngIf="submitted && f['password'].errors">
+                        <div class="error text-danger">
+                            Password is mandatory.
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success mt-1">Login</button>
+                <button class="btn btn-outline-success float-end mt-1"  href="signup">signup</button>
+            </form>
+
+            <!-- <form class="d-flex">
+         
+                <button class="btn btn-outline-success float-end"  href="signup">signup</button>
+              </form> -->
+        </div>
+    </div>
+</div>
