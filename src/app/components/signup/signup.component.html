@@ -32,7 +32,7 @@ id, name, password, remarks, username, address, email, mobile
 					
 
                     <div>
-                        <button class="btn btn-success float-end mt-4" type="submit" >{{isSave? 'Add User' : 'Update'}}</button>
+                        <a class="btn btn-success float-end mt-4" href="login" type="submit" >{{isSave? 'Submit' : 'Update'}}</a>
                         <button class="btn btn-danger mt-4" type="reset" (click)="resetForm()">Reset</button>
                     </div>
                 </form>
