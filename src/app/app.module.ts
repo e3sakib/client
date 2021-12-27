@@ -9,7 +9,7 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { HeaderComponent } from './components/layout/header/header.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
-import {  FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LocationComponent } from './location/location.component';
 import { ProductComponent } from './product/product.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -34,9 +34,9 @@ import { EmployeeComponent } from './employee/employee.component';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule,BrowserAnimationsModule,
+    FormsModule, BrowserAnimationsModule,
     BsDropdownModule.forRoot()
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

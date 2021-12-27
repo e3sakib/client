@@ -1,4 +1,4 @@
-export class Prod{
+export class Signup{
     id: number=0;
     name: String = '';
     username: String = '';
